@@ -1,6 +1,10 @@
 [project]
 name = "example_package_janduplessis883"
 version = "0.0.1"
+dependencies = [
+    "requests",
+    "yellowbrick",
+]
 authors = [
   { name="Jan du Plessis", email="drjanduplessis@icloud.com" },
 ]
@@ -16,3 +20,7 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/pypa/sampleproject"
 Issues = "https://github.com/pypa/sampleproject/issues"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
